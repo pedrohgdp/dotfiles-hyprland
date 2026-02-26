@@ -6,7 +6,8 @@
 
   "modules-left": [
     "custom/launcher",
-    "custom/spotify"
+    "custom/spotify",
+    "custom/screenshot"
   ],
 
   "modules-center": [
@@ -83,5 +84,12 @@
     "on-scroll-up": "~/.config/waybar/scripts/power.sh next",
     "on-scroll-down": "~/.config/waybar/scripts/power.sh prev",
     "on-click": "~/.config/waybar/scripts/power.sh run"
+  },
+
+  "custom/screenshot": {
+    "format": "",
+    "tooltip": "Recorte de tela",
+    "on-click": "grim -g \"$(slurp)\" ~/Imagens/print-$(date +%s).png",
+    "on-click-right": "grim ~/Imagens/print-$(date +%s).png"
   }
 }
