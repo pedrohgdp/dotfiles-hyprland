@@ -1,0 +1,87 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "spacing": 6,
+
+  "modules-left": [
+    "custom/launcher",
+    "custom/spotify"
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "custom/volume",
+    "network",
+    "cpu",
+    "memory",
+    "clock",
+    "tray",
+    "custom/power"
+  ],
+
+  "custom/launcher": {
+    "format": "",
+    "on-click": "rofi -show drun -theme ~/.config/rofi/theme.rasi"
+  },
+
+  "custom/spotify": {
+    "exec": "~/.config/waybar/scripts/spotify.sh",
+    "restart-interval": 1
+  },
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "persistent-workspaces": {
+      "*": [1,2,3,4,5]
+    }
+  },
+
+  "custom/volume": {
+    "exec": "~/.config/waybar/scripts/volume.sh",
+    "interval": 1,
+    "on-scroll-up": "~/.config/waybar/scripts/volume.sh up",
+    "on-scroll-down": "~/.config/waybar/scripts/volume.sh down",
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "interval": 5,
+    "format-wifi": " {essid}",
+    "format-ethernet": "󰈀 Ethernet",
+    "format-disconnected": "󰖪 Offline"
+  },
+
+  "cpu": {
+    "interval": 2,
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "interval": 2,
+    "format": " {percentage}%"
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": " {:%H:%M}",
+    "format-alt": " {:%d/%m/%Y}"
+  },
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 12
+  },
+
+  "custom/power": {
+    "exec": "~/.config/waybar/scripts/power.sh",
+    "interval": 0,
+    "on-scroll-up": "~/.config/waybar/scripts/power.sh next",
+    "on-scroll-down": "~/.config/waybar/scripts/power.sh prev",
+    "on-click": "~/.config/waybar/scripts/power.sh run"
+  }
+}

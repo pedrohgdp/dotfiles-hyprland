@@ -1,0 +1,60 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+}
+
+* {
+    font: "JetBrainsMono Nerd Font 12";
+    background: rgba(20,16,14,0.75);
+    background-alt: #14100e;
+    foreground: #d8d0c7;
+    selected: #7e9b74;
+    active: #b86a3c;
+    urgent: #b86a3c;
+}
+
+window {
+    transparency: "real";
+    background-color: @background;
+    border: 2px;
+    border-color: #b86a3c;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+mainbox {
+    background-color: transparent;
+}
+
+inputbar {
+    background-color: @background-alt;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: #7e9b74;
+}
+
+listview {
+    border: 0;
+    lines: 8;
+    spacing: 6px;
+    scrollbar: false;
+}
+
+element {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: #111;
+}
+
+element-icon {
+    size: 24px;
+}

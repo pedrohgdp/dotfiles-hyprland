@@ -1,0 +1,76 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 13px;
+  border: none;
+  border-radius: 8px;
+}
+
+window#waybar {
+  background: rgba(20, 16, 14, 0.65);
+  color: #d8d0c7;
+}
+
+/* Launcher */
+#custom-launcher {
+  font-size: 18px;
+  padding: 0 14px;
+  color: #b86a3c;
+}
+
+/* Spotify */
+#custom-spotify {
+  padding: 0 14px;
+  color: #7e9b74;
+}
+
+/* Workspaces */
+#workspaces button {
+  padding: 0 10px;
+  margin: 4px;
+  color: #b86a3c;
+}
+
+#workspaces button.active {
+  background: rgba(90,120,80,0.6);
+  color: #111;
+}
+
+/* Volume */
+#custom-volume {
+  font-size: 14px;
+  padding: 0 14px;
+  color: #7e9b74;
+}
+
+/* CPU maior */
+#cpu {
+  font-size: 14px;
+  padding: 0 14px;
+  color: #b86a3c;
+}
+
+/* Memory */
+#memory {
+  padding: 0 14px;
+  color: #7e9b74;
+}
+
+/* Power maior */
+#custom-power {
+  font-size: 18px;
+  padding: 0 16px;
+  color: #b86a3c;
+}
+
+#clock {
+  font-size: 13px;
+  padding: 0 20px;
+  margin-right: 10px;
+  color: #d8d0c7;
+  font-weight: bold;
+  background: rgba(90, 120, 80, 0.15);
+}
+
+#tray {
+  margin-left: 2px;
+}
